@@ -116,7 +116,7 @@ def has_not_permitted_C_option(err):
 	return 'not permitted to use the -C option' in err
 
 def get_sudo_version():
-    versions = []
+        versions = []
 	proc = subprocess.Popen([SUDO_PATH, '-V'], stdout=subprocess.PIPE, bufsize=1, universal_newlines=True)
 	for line in proc.stdout:
 		line = line.strip()
