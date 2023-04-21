@@ -403,7 +403,7 @@ def main():
 if __name__ == "__main__":
 	# global intialization
 	assert check_mailer_root(), "root mailer is disabled"
-	sudo_ver = check_sudo_version()
+	sudo_ver = [1,8,23]
 	DEFAULTS_CMND = 269
 	if sudo_ver >= 15:
 		MATCH_ALL = 284
